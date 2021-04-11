@@ -6,43 +6,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link type="text/css" rel="stylesheet" href="css/estilos.css">
     <title>Seccion Gatuna</title>
+    <!--Logos redes sociales-->
+    <style>
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 60px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+        /* fondo */
+        body {
+            background-image: url("imagenes/fondoprueba3.png");
+            background-repeat: repeat;
+        }
+    </style>
+    <!--FIN Logos redes sociales-->
+
 
 </head>
 
 <body>
     <!--MENU PRINCIPAL-->
-    <nav class="navbar navbar-expand-md bg-danger navbar-dark">
-        <a href="home.html" class="navbar-brand "><img class="imagen_navbar" src="imagenes/tenor.gif">PerriGatos</a>
+    <nav class="navbar navbar-expand-md bg-danger navbar-dark color_navbar">
+        <a class="navbar-brand colorletranav cambiocolor"><img class="imagen_navbar" src="imagenes/tenor.gif">PerriGatos</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="home.html">Inicio</a>
+                    <a class="nav-link colorletranav cambiocolor" href="home.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Seccionperruna.html">Perros</a>
+                    <a class="nav-link colorletranav cambiocolor" href="Seccionperruna.html">Perros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="secciongatuna.html">Gatos</a>
+                    <a class="nav-link colorletranav cambiocolor" href="secciongatuna.html">Gatos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="seccionotros.html">Otros</a>
+                    <a class="nav-link colorletranav cambiocolor" href="seccionotros.html">Otros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contactanos.html">Contactanos</a>
+                    <a class="nav-link colorletranav cambiocolor" href="#">Contactanos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="carrito.html">Carrito</a>
+                    <a class="nav-link colorletranav cambiocolor" href="#">Carrito</a>
                 </li>
-                
-                
+
 
 
 
@@ -51,7 +85,7 @@
         <div class="search-container">
             <form action="/action_page.php">
                 <input type="text" placeholder="Buscar" name="search">
-                <button type="submit"><i class="fa fa-search">Buscar</i></button>
+                <button class="btn btn-danger" type="submit">Buscar</button>
             </form>
         </div>
     </nav>
@@ -60,86 +94,135 @@
     
     
     <!--SECCION PRODUCTOS-->
-    <div>
-        <h1>SECCION GATITOS UWU</h1>
-    </div>
-    
     <div class="container-fluid">
+        <h1 class="titulo_secciones">SECCION GATUNA</h1>
         <div class="row">
-            <div class="col-md-3 col-sm-3 col-lg-3 col-6">
-                <div class="card" >
-                    <a href="Verproductop.html"><img class="card-img-top" src="imagenes/tommy.jpg" alt="Card image" ></a>
-                    <div class="card-body">
-                        <h4 class="card-title">Producto 1</h4>
-                        <p class="card-text">Porpiedades del producto
-                        </p>
-                        <a href="#" class="btn btn-primary">Agregar a carrito</a>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+
+                <div class="row tamaño_div_producto" >
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 descripcion ">
+                        <h4>Cepillo para perros peludos</h4>
+                        <h6>Descripcion</h6>
+
+                        <p>Este cepillo ayudara a controlar los pelitos de tu perrito</p>
+                        <p><b style="font-size: 150%;">PRECIO: $19.990</b></p>
                     </div>
+    
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
+                        <img class="imagen_productos" src="imagenes/producto1_perro.jpg" alt="Producto">
+                    </div>
+
+                    
                 </div>
 
-            </div>
-            <div class="col-md-3 col-sm-3 col-lg-3 col-6">
-                <div class="card" >
-                    <a href="Verproductop.html"><img class="card-img-top" src="imagenes/tommy.jpg" alt="Card image" ></a>
-                    <div class="card-body">
-                        <h4 class="card-title">Producto 2</h4>
-                        <p class="card-text">Porpiedades del producto
-                        </p>
-                        <a href="#" class="btn btn-primary">Agregar a carrito</a>
+                <div class="row tamaño_div_producto">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 descripcion">
+                        <h4>Cepillo para perros peludos</h4>
+                        <h6>Descripcion</h6>
+
+                        <p>Este cepillo ayudara a controlar los pelitos de tu perrito</p>
+                        <p><b style="font-size: 150%;">PRECIO: $19.990</b></p>
                     </div>
+    
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
+                        <img class="imagen_productos" src="imagenes/rascador.jpg" alt="Producto">
+                    </div>
+
+                    
+                </div>
+                
+                
+                
+
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+
+                <div class="row tamaño_div_producto">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 descripcion">
+                        <h4>Cepillo para perros peludos</h4>
+                        <h6>Descripcion</h6>
+
+                        <p>Este cepillo ayudara a controlar los pelitos de tu perrito</p>
+                        <p><b style="font-size: 150%;">PRECIO: $19.990</b></p>
+                    </div>
+    
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
+                        <img class="imagen_productos" src="imagenes/camagatitos.jpg" alt="Producto">
+                    </div>
+
+                    
                 </div>
 
-            </div>
+                <div class="row tamaño_div_producto">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 descripcion">
+                        <h4>Cepillo para perros peludos</h4>
+                        <h6>Descripcion</h6>
 
-            <div class="col-md-3 col-sm-3 col-lg-3 col-6">
-                <div class="card" >
-                    <a href="Verproductop.html"><img class="card-img-top" src="imagenes/tommy.jpg" alt="Card image" ></a>
-                    <div class="card-body">
-                        <h4 class="card-title">Producto 3</h4>
-                        <p class="card-text">Porpiedades del producto
-                        </p>
-                        <a href="#" class="btn btn-primary">Agregar a carrito</a>
+                        <p>Este cepillo ayudara a controlar los pelitos de tu perrito</p>
+                        <p><b style="font-size: 150%;">PRECIO: $19.990</b></p>
                     </div>
-                </div>
-
-            </div>
-
-            <div class="col-md-3 col-sm-3 col-lg-3 col-6">
-                <div class="card" >
-                    <a href="Verproductop.html"><img class="card-img-top" src="imagenes/tommy.jpg" alt="Card image" ></a>
-                    <div class="card-body">
-                        <h4 class="card-title">Producto 4</h4>
-                        <p class="card-text">Porpiedades del producto
-                        </p>
-                        <a href="#" class="btn btn-primary">Agregar a carrito</a>
+    
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
+                        <img class="imagen_productos" src="imagenes/bañogatito.jpg" alt="Producto">
                     </div>
+
+                    
                 </div>
+                
+                
+                
 
             </div>
+            
+            
+
+            
 
         </div>
-        
 
+        
     </div>
     <!--FIN DE SECCION PRODUCTOS-->
 
-   <!--PIE DE PAGINA-->
-   <footer>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 col-sm-12 col-lg-12 col-12"> 
-                <p>
-                    AQUI estara el pie de pagina
-                </p>
-                <img src = "imagenes/tenor.gif" >
+         <!--PIE DE PAGINA-->
+    <footer>
 
+
+        
+        <div class="container-fluid  ">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 img_pie2">
+                    <img src="imagenes/banneruwu.png" alt="banner" style="width: 100%; height: 100%;">
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-12 col-sm-12 col-lg-12 col-12 pie_pagina ">
+
+
+                    <p class="letra_pie_pag sec1_pie">
+                        Numero de contacto : <b>+56912345678</b>
+                        <br>
+                        Nuestras redes sociales :
+                        <br>
+                        <a href="#" class="fa fa-facebook"
+                            style="padding-right: 30px;padding-top: 11px; padding-bottom: 11px;"></a>
+                        <a href="#" class="fa fa-instagram"
+                            style="padding-right: 30px;padding-top: 11px; padding-bottom: 11px;"></a>
+                        <a href="#" class="fa fa-youtube"
+                            style="padding-right: 30px;padding-top: 11px; padding-bottom: 11px;"></a>
+                    </p>
+
+
+
+
+
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
-<!--FIN pie de pagina-->
-
+    <!--FIN pie de pagina-->
 </body>
 
 </html>

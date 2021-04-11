@@ -11,195 +11,265 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link type="text/css" rel="stylesheet" href="css/estilos.css">
     <title>Producto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Logos redes sociales-->
+    <style>
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 60px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+
+        body {
+            background-image: url("imagenes/fondoprueba3.png");
+            background-repeat: repeat;
+        }
+        
+    </style>
+    <!--FIN Logos redes sociales-->
 
 
 </head>
 
 <body>
     <!--MENU PRINCIPAL-->
-    <nav class="navbar navbar-expand-md bg-danger navbar-dark">
-        <a href="home.html" class="navbar-brand "><img class="imagen_navbar" src="imagenes/tenor.gif">PerriGatos</a>
+    <nav class="navbar navbar-expand-md bg-danger navbar-dark color_navbar">
+        <a class="navbar-brand colorletranav cambiocolor"><img class="imagen_navbar" src="imagenes/tenor.gif">PerriGatos</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="home.html">Inicio</a>
+                    <a class="nav-link colorletranav cambiocolor" href="home.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Seccionperruna.html">Perros</a>
+                    <a class="nav-link colorletranav cambiocolor" href="Seccionperruna.html">Perros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="secciongatuna.html">Gatos</a>
+                    <a class="nav-link colorletranav cambiocolor" href="secciongatuna.html">Gatos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="seccionotros.html">Otros</a>
+                    <a class="nav-link colorletranav cambiocolor" href="seccionotros.html">Otros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contactanos.html">Contactanos</a>
+                    <a class="nav-link colorletranav cambiocolor" href="#">Contactanos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="carrito.html">Carrito</a>
+                    <a class="nav-link colorletranav cambiocolor" href="#">Carrito</a>
                 </li>
 
-                
+
+
+
             </ul>
-            
         </div>
         <div class="search-container">
             <form action="/action_page.php">
                 <input type="text" placeholder="Buscar" name="search">
-                <button type="submit"><i class="fa fa-search"></i>Buscar</button>
+                <button class="btn btn-danger" type="submit">Buscar</button>
             </form>
         </div>
     </nav>
     <!--MENU FIN PRINCIPAL-->
 
+
     <!--Contenedor de imagen y leve descripcion-->
-    <div class="container-fluid">
+    <div class="container-fluid separacion_top letra">
 
-        <div class="row">
-            <div class="col-sm-4 col-md-8 col-lg-9 col-xl-3 imguwu"
-                style="border: 1px solid black; background: rgb(255, 255, 255);">
-                <div class="card ">
-                    <img src="imagenes/tommy.jpg">
-                </div>
-            </div>
-            <div class="col-sm-4 col-md-4 col-lg-3 col-xl-1">
+        <div class="row" style="margin-right: 0%;">
+            <div class="col-sm-10 col-md-8 col-lg-6 col-xl-4 offset-1 mt-2">
+
+                <img src="imagenes/tommy.jpg" class="imagenladoiz">
 
             </div>
 
-            <div class="col-sm-4 col-md-4 col-lg-3 col-xl-4"
-                style="border: 1px solid black; background: rgb(255, 255, 255);">
-
-                <h1>perro waton esta triste</h1>
-                <p>--------</p>
-                <p>$12.499</p>
-                <form>
-                    <p class="clasificacion">
-                        <input id="radio1" type="radio" name="estrellas" value="5">
-                        <label for="radio1">★</label>
-                        <input id="radio2" type="radio" name="estrellas" value="4">
-                        <label for="radio2">★</label>
-                        <input id="radio3" type="radio" name="estrellas" value="3">
-                        <label for="radio3">★</label>
-                        <input id="radio4" type="radio" name="estrellas" value="2">
-                        <label for="radio4">★</label>
-                        <input id="radio5" type="radio" name="estrellas" value="1">
-                        <label for="radio5">★</label>
-                    </p>
-                </form>
-                <p>SKU: 1610656728123</p>
-                <p>Producto Marca: uwu</p>
-                <p>Stock: 1</p>
-
-
-            </div>
-
-            <div class="col-sm-4 col-md-4 col-lg-3 col-xl-4"
-                style="border: 1px solid black; background: rgb(255, 255, 255);">
-                <div>
-                    <h4>selecciona color </h4>
-                    <input type="color">
-                </div>
-                <h3>Cantidad del producto</h3>
-                <div> 
+            <div class="col-sm-10 col-md-8 col-lg-6 col-xl-4 offset-1  mt-2">
+                <div class="bloqueproducto">
+                    <h1>perro waton esta triste</h1>
+                    <p>--------</p>
+                    <h3>$12.499</h3>
                     <form>
-                        <input type="number" required="" min="1">
+                        <p class="clasificacion">
+                            <input id="radio1" type="radio" name="estrellas" value="5">
+                            <label for="radio1">★</label>
+                            <input id="radio2" type="radio" name="estrellas" value="4">
+                            <label for="radio2">★</label>
+                            <input id="radio3" type="radio" name="estrellas" value="3">
+                            <label for="radio3">★</label>
+                            <input id="radio4" type="radio" name="estrellas" value="2">
+                            <label for="radio4">★</label>
+                            <input id="radio5" type="radio" name="estrellas" value="1">
+                            <label for="radio5">★</label>
+                        </p>
                     </form>
-
-                    <button type="button" class="btn btn-danger">Agregar al carrito</button>
-                </div>
-
-
-            </div>
-        </div>
-    </div>
-
-    <!--Contenedor de imagen y leve descripcion-->
-
-    <!--navegador de descripciones-->
-    <div class="bs-example">
-        <ul class="nav nav-tabs">
-            <li class="nav-item">
-                <a href="#home" class="nav-link active" data-toggle="tab">Descripcion</a>
-            </li>
-            <li class="nav-item">
-                <a href="#profile" class="nav-link" data-toggle="tab">Mas detalle</a>
-            </li>
-            <li class="nav-item">
-                <a href="#messages" class="nav-link" data-toggle="tab">Valoraciones</a>
-            </li>
-        </ul>
-        <div class="tab-content">
-            <div class="tab-pane fade show active" id="home">
-                <h4 class="mt-2">Descripcion</h4>
-                <h1>Entretencion para tu perro waton</h1>
-                <p>Cuélgalo de cualquier perilla de la puerta</p>
-                <h5>Caracteristicas</h5>
-                <ul>
-                    <li>uwu</li>
-                </ul>
-            </div>
-            <div class="tab-pane fade" id="profile">
-                <h4 class="mt-2">detalles del perro waton</h4>
-                <p>ALgo grande xd.</p>
-            </div>
-            <div class="tab-pane fade" id="messages">
-                <h4 class="mt-2">Valoraciones</h4>
-                <p>Esta watoncito</p>
-                <form>
-                    <div class="form-group">
-                      <label for="exampleFormControlInput1">Email</label>
-                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Perrigatos@gmail.cl">
+                    <p>SKU: 1610656728123</p>
+                    <p>Producto Marca: UwU</p>
+                    <p>Stock: 1</p>
+                    <div>
+                        <h2>selecciona color </h2>
+                        <button class="rounded-circle"
+                            style="height: 30px; width: 30px;background-color: blue;"></button>
+                        <button class="rounded-circle"
+                            style="height: 30px; width: 30px;background-color: rgb(250, 4, 217);"></button>
                     </div>
+                    <h3>Cantidad del producto</h3>
                     <div>
                         <form>
-                            <p class="clasificacion">
-                                <input id="radio1" type="radio" name="estrellas" value="5">
-                                <label for="radio1">★</label>
-                                <input id="radio2" type="radio" name="estrellas" value="4">
-                                <label for="radio2">★</label>
-                                <input id="radio3" type="radio" name="estrellas" value="3">
-                                <label for="radio3">★</label>
-                                <input id="radio4" type="radio" name="estrellas" value="2">
-                                <label for="radio4">★</label>
-                                <input id="radio5" type="radio" name="estrellas" value="1">
-                                <label for="radio5">★</label>
-                            </p>
+                            <input class="form-control" type="number" required="" min="1" style="width: 15%;">
                         </form>
+                    </div>
+                    <div class="text-center col-12 " style="padding-bottom: 9px;;">
+                        <button type="button" class="btn btn-danger">Agregar al carrito</button>
+                        <div>
+                            <p class="letra_pie_pag sec1_pie">
+                            <h4>Compartir:</h4>
+                            <a href="#" class="fa fa-facebook"
+                                style="padding-right: 30px;padding-top: 11px; padding-bottom: 11px;"></a>
+                            <a href="#" class="fa fa-instagram"
+                                style="padding-right: 30px;padding-top: 11px; padding-bottom: 11px;"></a>
+                            <a href="#" class="fa fa-youtube"
+                                style="padding-right: 30px;padding-top: 11px; padding-bottom: 11px;"></a>
+                            </p>
+                        </div>
 
                     </div>
-                    <div class="form-group">
-                      <label for="exampleFormControlTextarea1">Comentario</label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <button type="button" class="btn btn-danger">Enviar</button>
-                  </form>
+
+                </div>
+
             </div>
         </div>
     </div>
+    <!-- ctrl k c  ctrol k u desconmentar-->
+
     <!--navegador de descripciones-->
 
-   
 
-    
+    <div class="col-sm-12 col-md-8 col-lg-5 offset-md-1 separaciodes">
+
+        <div class="bs-example">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active bg-light colorletrades" data-toggle="tab">Descripcion</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#profile" class="nav-link bg-light colorletrades" data-toggle="tab">Mas detalle</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#messages" class="nav-link bg-light colorletrades" data-toggle="tab">Valoraciones</a>
+                </li>
+            </ul>
+            <div class="tab-content bloquemasdes letra">
+                <div class="tab-pane fade show active" id="home">
+                    <h4 class="mt-2">Descripcion</h4>
+                    <h3>Entretencion para tu perro waton</h3>
+                    <p>Cuélgalo de cualquier perilla de la puerta</p>
+                    <h5>Caracteristicas</h5>
+                    <ul>
+                        <li>uwu</li>
+                        <li>uwu</li>
+                        <li>uwu</li>
+                        <li>uwu</li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="profile">
+                    <h4 class="mt-2">detalles del perro waton</h4>
+                    <p>ALgo grande xd.</p>
+                    <p>ALgo grande xd.</p>
+                    <p>ALgo grande xd.</p>
+                    <p>ALgo grande xd.</p>
+                </div>
+                <div class="tab-pane fade" id="messages">
+                    <h4 class="mt-2">Valoraciones</h4>
+                    <p>Esta watoncito</p>
+                    <form>
+                        <div class="form-group ">
+                            <label for="exampleFormControlInput1">Email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Perrigatos@gmail.cl">
+                        </div>
+                        <div>
+                            <form>
+                                <p class="clasificacion">
+                                    <input id="radio1" type="radio" name="estrellas" value="5">
+                                    <label for="radio1">★</label>
+                                    <input id="radio2" type="radio" name="estrellas" value="4">
+                                    <label for="radio2">★</label>
+                                    <input id="radio3" type="radio" name="estrellas" value="3">
+                                    <label for="radio3">★</label>
+                                    <input id="radio4" type="radio" name="estrellas" value="2">
+                                    <label for="radio4">★</label>
+                                    <input id="radio5" type="radio" name="estrellas" value="1">
+                                    <label for="radio5">★</label>
+                                </p>
+                            </form>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Comentario</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-danger">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--navegador de descripciones-->
+
+
+
+
     <!--PIE DE PAGINA-->
-    <footer >
+    <footer>
+
+
+        
         <div class="container-fluid  ">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 img_pie2">
+                    <img src="imagenes/banneruwu.png" alt="banner" style="width: 100%; height: 100%;">
+                </div>
+            </div>
             <div class="row ">
                 <div class="col-md-12 col-sm-12 col-lg-12 col-12 pie_pagina ">
-                    <div class="letra_pie_pag sec1_pe">
-                    <p>
-                       Numero de contacto : <b>+56912345678</b>
-                       <br>
-                       Nuestras redes sociales : <a href=""><b>FACEBOOK</b></a>
-                       <a href=""><b>INSTAGRAM</b></a> 
-                       <a href=""><b>YOUTUBE</b></a>
+
+
+                    <p class="letra_pie_pag">
+                        Numero de contacto : <b>+56912345678</b>
+                        <br>
+                        Nuestras redes sociales :
+                        <br>
+                        <a href="#" class="fa fa-facebook"
+                            style="padding-right: 30px;padding-top: 11px; padding-bottom: 11px;"></a>
+                        <a href="#" class="fa fa-instagram"
+                            style="padding-right: 30px;padding-top: 11px; padding-bottom: 11px;"></a>
+                        <a href="#" class="fa fa-youtube"
+                            style="padding-right: 30px;padding-top: 11px; padding-bottom: 11px;"></a>
                     </p>
-                    <img class="imagen_pie" src="imagenes/tenor.gif">
-                    </div>
+
+
 
 
 
