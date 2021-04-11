@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
   
 }
+/* LETRA DESCRIPCIONES */
 .colorletrades{
   color: rgb(50, 28, 151) !important;
   font-size: 15px;
@@ -15,13 +16,31 @@
 /* cambio de color de navbar letra */
 .colorletranav{
   color: rgb(50, 28, 151) !important;
-  font-size: 20px;
+  font-size: 1.8rem;
 }
+
+@media (min-width: 200px) and (max-width: 1000px){
+  .colorletranav{
+    color: rgb(50, 28, 151) !important;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1100px){
+  .colorletranav{
+    color: rgb(50, 28, 151) !important;
+    font-size: 0.98rem;
+  }
+}
+
+
+/* NAVBAR LETRAS */
 .cambiocolor:hover{
 
   color: rgb(255, 251, 244) !important;
 
 }
+/* SEPARACION DE DESCRIPCION */
 .separaciodes{
   margin-top: 8%;
   padding: 0% !important;
@@ -72,10 +91,12 @@ font-family: 'Amatic SC', cursive;
 
 
 
+
+
 /* Darle borde y redondear el borde del texto del producto */
 .bloqueproducto{
   border: 2px solid rgb(241, 142, 12);
-  background: rgb(178, 235, 232);
+  background: rgb(214, 247, 245);
   padding-left: 25px;
   padding-right: 25px;
   border-radius: 15px;
@@ -84,7 +105,7 @@ font-family: 'Amatic SC', cursive;
   @media (min-width: 200px) and (max-width: 800px){
     .bloqueproducto{
       border: 2px solid rgb(241, 142, 12);
-      background: rgb(178, 235, 232);
+      background: rgb(214, 247, 245);
       padding-left: 25px;
       padding-right: 25px;
       border-radius: 15px;
@@ -94,7 +115,7 @@ font-family: 'Amatic SC', cursive;
 
 .bloquemasdes{
   border: 2px solid rgb(241, 142, 12);
-  background: rgb(178, 235, 232);
+  background: rgb(214, 247, 245);
   padding-left: 25px;
   
   border-radius: 15px;
@@ -149,10 +170,26 @@ input[type="radio"]:checked ~ label {
 .imagen_navbar {
   height: 60px;
   width: 60px;
-  margin-top: 15px;
-  margin-left: 15px;
+  padding:auto;
  
 }
+/* TITULO RESPONSIVO PERRIGATOS*/
+
+.perrigatos{
+  padding-top: 0.7%;
+  font-weight: 700;
+}
+
+@media (min-width: 200px) and (max-width: 1100px) {
+  .perrigatos{
+    padding-top: 0.7%;
+    font-size: large;
+    font-weight: 700;
+    
+  }
+  
+}
+
 
 .color_navbar{
   background: rgb(236, 189, 100)!important;
@@ -235,7 +272,7 @@ input[type="radio"]:checked ~ label {
   width: 100%;
   word-wrap: break-word;
   font-size: 1rem;
-  font-style: oblique;
+  font-family: 'Amatic SC', cursive;
   font-weight: 400;
   padding: 3%;
   
@@ -248,7 +285,7 @@ input[type="radio"]:checked ~ label {
   font-style: italic;
   font-weight: 700;
   
-  -webkit-text-fill-color:rgb(241, 12, 12);
+  -webkit-text-fill-color:rgb(241, 142, 12);
   -webkit-text-stroke: 2px rgb(0, 0, 0); 
 
 }
@@ -302,8 +339,6 @@ input[type="radio"]:checked ~ label {
 
 }
 
-
-
 .img_oferta1{
   width: 100%;
   height: 100%;
@@ -341,7 +376,7 @@ input[type="radio"]:checked ~ label {
 @media (min-width: 1300px) and (max-width: 9999px) {
   .estilo_oferta{
       border-radius: 20px;
-      border: 3px solid rgb(177, 81, 69);
+      border: 3px solid rgb(224, 130, 118);
       margin-left: 50px;
       margin-right: 50px;
   }
@@ -354,8 +389,8 @@ input[type="radio"]:checked ~ label {
   font-style: italic;
   font-weight: 700;
   
-  -webkit-text-fill-color:rgb(247, 252, 0);
-  -webkit-text-stroke: 2px black; 
+  -webkit-text-fill-color:rgb(236, 18, 18);
+  -webkit-text-stroke: 2px rgb(8, 226, 255); 
 }
 
 @media (min-width: 100px) and (max-width: 700px) {
@@ -463,3 +498,104 @@ input[type="radio"]:checked ~ label {
   }
 
 }
+
+
+/* llamativos */
+
+
+.animated-shadow {
+ color: #bb1717;
+ font: normal 140px Varela Round, sans-serif;
+ height: 140px;
+ left: 0;
+ letter-spacing: 5px;
+ text-align: center;
+ text-transform: uppercase;
+ width: 100%;
+ animation: move linear 2000ms infinite;
+ z-index: 2
+}
+
+@media (min-width: 100px) and (max-width: 1000px) {
+  .animated-shadow {
+    color: #bb1717;
+    font: normal 40px Varela Round, sans-serif;
+    height: 40px;
+    left: 0;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    animation: move linear 2000ms infinite;
+    z-index: 2
+   }
+
+
+  
+
+}
+/*Animación para rotar las sombras*/
+@keyframes move {
+ 0% {
+   text-shadow:
+     4px -4px 0 #da0641,
+     3px -3px 0 #da0641,
+     2px -2px 0 #da0641,
+     1px -1px 0 #da0641,
+     -4px 4px 0 #13f1fc,
+     -3px 3px 0 #13f1fc,
+     -2px 2px 0 #13f1fc,
+     -1px 1px 0 #13f1fc
+   ;
+ }
+ 25% {
+   text-shadow:
+     -4px -4px 0 #13f1fc,
+     -3px -3px 0 #13f1fc,
+     -2px -2px 0 #13f1fc,
+     -1px -1px 0 #13f1fc,
+     4px 4px 0 #da0641,
+     3px 3px 0 #da0641,
+     2px 2px 0 #da0641,
+     1px 1px 0 #da0641
+   ;
+ }
+ 50% {
+   text-shadow:
+     -4px 4px 0 #da0641,
+     -3px 3px 0 #da0641,
+     -2px 2px 0 #da0641,
+     -1px 1px 0 #da0641,
+     4px -4px 0 #13f1fc,
+     3px -3px 0 #13f1fc,
+     2px -2px 0 #13f1fc,
+     1px -1px 0 #13f1fc
+   ;
+ }
+ 75% {
+   text-shadow:
+     4px 4px 0 #13f1fc,
+     3px 3px 0 #13f1fc,
+     2px 2px 0 #13f1fc,
+     1px 1px 0 #13f1fc,
+     -4px -4px 0 #da0641,
+     -3px -3px 0 #da0641,
+     -2px -2px 0 #da0641,
+     -1px -1px 0 #da0641
+   ;
+ }
+ 100% {
+   text-shadow:
+     4px -4px 0 #da0641,
+     3px -3px 0 #da0641,
+     2px -2px 0 #da0641,
+     1px -1px 0 #da0641,
+     -4px 4px 0 #13f1fc,
+     -3px 3px 0 #13f1fc,
+     -2px 2px 0 #13f1fc,
+     -1px 1px 0 #13f1fc
+   ;
+ }
+}
+
+/* FIN LETRA TITULO */
