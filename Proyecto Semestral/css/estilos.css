@@ -71,16 +71,8 @@
    }
 }
 
-.centradodes{
-  text-align: left;
-  margin-top: 60px;
-}
 
-.agrandarblock{
-  width: 100%;
-  height: 100%;
 
-}
 
 .letra{
 font-family: 'Amatic SC', cursive;
@@ -157,14 +149,14 @@ label {
   color: grey;
 }
 
-/* Con esto se maneja el color de valoracion aun no puntuada */
+/* Con esto se maneja el color de valoracion aun por puntuar */
 label:hover,
 label:hover ~ label {
-  color: rgb(67, 47, 243);
+  color: rgb(53, 230, 8);
 }
 /* Con esto se maneja el color de valoracion puntuada */
 input[type="radio"]:checked ~ label {
-  color: rgb(247, 60, 14);
+  color: rgb(247, 7, 235);
 }
 /* fin estrellas de valoracion */
 
@@ -201,12 +193,13 @@ input[type="radio"]:checked ~ label {
   background: rgb(236, 189, 100)!important;
 }
 
+/*Con esta centro etiquetas*/
 .centrado{
   text-align: center;
   /* border: 5px solid blue;*/
 }
 
-
+/*Con este controlo el tamaño del banner*/
 .img_tamano_banner{
   width: 100%;
   min-height: 500px;
@@ -223,7 +216,7 @@ input[type="radio"]:checked ~ label {
 }
 
 
-
+/*Controlo el pie de pagina para que sea adaptable a los dispositivos mobiles*/
 .pie_pagina{
   
   width: 100%;
@@ -266,7 +259,7 @@ input[type="radio"]:checked ~ label {
   
 }
 
-/* 2footer */
+/* Imagen que acompaña al pie de pagina */
 
 .img_pie2{
   padding: 0%;
@@ -308,7 +301,7 @@ input[type="radio"]:checked ~ label {
 
 
 
-
+/*Control del texto de la seccion cliente satisfecho*/
 .clientes_sat{
   
   text-align: left;
@@ -316,7 +309,7 @@ input[type="radio"]:checked ~ label {
   word-wrap: break-word;
   font-size: 1rem;
   font-family: 'Amatic SC', cursive;
-  font-weight: 400;
+  font-weight: 300;
   padding: 3%;
   
 
@@ -329,13 +322,14 @@ input[type="radio"]:checked ~ label {
     word-wrap: break-word;
     font-size: 1.5rem;
     font-family: 'Amatic SC', cursive;
-    font-weight: 400;
+    font-weight: 300;
     padding: 3%;
     
   }
 
 }
 
+/*Control de titulo del cliente satisfecho*/
 .titulo_cliente_sat{
   font-family:Verdana, Geneva, Tahoma, sans-serif ;
   font-size: 3rem;
@@ -360,7 +354,7 @@ input[type="radio"]:checked ~ label {
 
 }
 
-
+/*Control de texto sobre la seccion sobre nosotros*/
 .sobre_noso{
   
   text-align: center;
@@ -369,7 +363,7 @@ input[type="radio"]:checked ~ label {
   
   font-size: 1rem;
   font-family: 'Amatic SC', cursive;
-  font-weight: 400;
+  font-weight: 300;
   padding: 3%;
 }
 
@@ -382,12 +376,13 @@ input[type="radio"]:checked ~ label {
     
     font-size: 1.5rem;
     font-family: 'Amatic SC', cursive;
-    font-weight: 400;
+    font-weight: 300;
     padding: 3%;
   }
 
 }
 
+/*Control sobre el titulo sobre nosotros*/
 .titulo_sobre_noso{
   font-family:Verdana, Geneva, Tahoma, sans-serif ;
   font-size: 3rem;
@@ -411,6 +406,7 @@ input[type="radio"]:checked ~ label {
 
 }
 
+/*Aqui se controla las imagenes de las ofertas*/
 .img_oferta1{
   width: 100%;
   height: 100%;
@@ -456,30 +452,12 @@ input[type="radio"]:checked ~ label {
 
 }
 
-.titulo_oferta{
-  font-family:Verdana, Geneva, Tahoma, sans-serif ;
-  font-size: 3rem;
-  font-style: italic;
-  font-weight: 700;
-  
-  -webkit-text-fill-color:rgb(236, 18, 18);
-  -webkit-text-stroke: 2px rgb(8, 226, 255); 
-}
 
-@media (min-width: 100px) and (max-width: 700px) {
-  .titulo_oferta{
-      font-family:Verdana, Geneva, Tahoma, sans-serif ;
-      font-size: 2rem;
-      font-style: italic;
-      font-weight: 700;
-      -webkit-text-fill-color:rgb(247, 252, 0);
-      -webkit-text-stroke: 2px black; 
-  }
-
-}
 
 
 /*Seccion perros*/
+
+/*Aqui se controlan las imagenes de la seccion de perros/gatos/otros*/
 .imagen_productos{
   width: 100%;
   height: 100%;
@@ -500,7 +478,7 @@ input[type="radio"]:checked ~ label {
 
 }
 
-
+/*Controlamos el bordes y espacios entre productos de las etiquetas de los productos*/
 .tamaño_div_producto{
   border: 3px solid rgb(241, 142, 12);
   text-align: center;
@@ -509,6 +487,8 @@ input[type="radio"]:checked ~ label {
   
 }
 
+
+/*Controlamos el titulo de las secciones*/
 .titulo_secciones{
   font-family:Verdana, Geneva, Tahoma, sans-serif ;
   font-size: 3rem;
@@ -532,6 +512,7 @@ input[type="radio"]:checked ~ label {
 
 }
 
+/*Controlamos el texto de los productos (la descripcion)*/
 @media (min-width: 100px) and (max-width: 700px) {
   .descripcion{
       font-size: small;
@@ -554,9 +535,9 @@ input[type="radio"]:checked ~ label {
 
 
 
-/* llamativos */
+/* Titulo de la oferta de home */
 
-
+/*Aqui contolamos el tamaño , color , etc*/
 .animated-shadow {
  color: #bb1717;
  font: normal 140px Varela Round, sans-serif;
@@ -654,6 +635,8 @@ input[type="radio"]:checked ~ label {
 
 /* FIN LETRA TITULO */
 
+
+/*Clase que altera titulo carrito*/
 .titulos-carrito{
   font-family:Verdana, Geneva, Tahoma, sans-serif ;
     font-size: 3rem;
@@ -664,6 +647,8 @@ input[type="radio"]:checked ~ label {
     -webkit-text-stroke: 2px rgb(0, 0, 0);
   }
 
+
+  /*Controla el titulo de los contactos*/
   .header {
     color: rgb(224, 130, 118);
     font-size: 27px;
@@ -671,6 +656,8 @@ input[type="radio"]:checked ~ label {
     font-weight: 900;
 }
 
+
+/*Controla los iconos de los contactos*/
 .bigicon {
     font-size: 35px;
     color: rgb(224, 130, 118);
