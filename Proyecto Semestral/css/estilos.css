@@ -665,13 +665,14 @@ input[type="radio"]:checked ~ label {
   }
 
   .header {
-    color: #36A0FF;
+    color: rgb(224, 130, 118);
     font-size: 27px;
     padding: 10px;
+    font-weight: 900;
 }
 
 .bigicon {
     font-size: 35px;
-    color: #36A0FF;
+    color: rgb(224, 130, 118);
 }
 
