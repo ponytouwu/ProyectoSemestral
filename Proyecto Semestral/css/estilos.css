@@ -89,7 +89,13 @@ font-family: 'Amatic SC', cursive;
  color: rgb(210,105,30);
 }
 
+.letrades{
+  font-family: 'Amatic SC', cursive;
 
+ font-size: 15px;
+ color: rgb(210,105,30);
+
+}
 
 
 
@@ -311,7 +317,7 @@ input[type="radio"]:checked ~ label {
   word-wrap: break-word;
   
   font-size: 1rem;
-  font-style: oblique;
+  font-family: 'Amatic SC', cursive;
   font-weight: 400;
   padding: 3%;
 }
@@ -352,6 +358,7 @@ input[type="radio"]:checked ~ label {
 @media (min-width: 100px) and (max-width: 700px) {
   .texto_of1{
       font-size: small;
+      font-family: 'Amatic SC', cursive;
      
   }
 
@@ -361,7 +368,7 @@ input[type="radio"]:checked ~ label {
 @media (min-width: 701px) and (max-width: 9000px) {
   .texto_of1{
       font-size: x-large;
-     
+      font-family: 'Amatic SC', cursive;
   }
 
 }
@@ -463,7 +470,7 @@ input[type="radio"]:checked ~ label {
   .descripcion{
       font-size: small;
       padding: 4px;
-     
+      font-family: 'Amatic SC', cursive;
   }
 
 }
@@ -473,7 +480,7 @@ input[type="radio"]:checked ~ label {
   .descripcion{
       font-size: x-large;
       padding: 4px;
-     
+      font-family: 'Amatic SC', cursive;
   }
 
 }
