@@ -1,10 +1,4 @@
 
-.fondopantalla{
- 
-    background-image: url("imagenes/fondo");
-    background-repeat: no-repeat;
-  
-}
 /* LETRA DESCRIPCIONES */
 .colorletrades{
   color: rgb(50, 28, 151) !important;
@@ -164,15 +158,16 @@ input[type="radio"]:checked ~ label {
 
 /* cuerpo secciones de producto y home */
 
-
+/*Imagen del navbar*/
 .imagen_navbar {
   height: 60px;
   width: 60px;
   padding:auto;
  
 }
-/* TITULO RESPONSIVO PERRIGATOS*/
 
+
+/* TITULO RESPONSIVO PERRIGATOS*/
 .perrigatos{
   padding-top: 0.7%;
   font-weight: 700;
