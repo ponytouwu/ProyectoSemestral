@@ -1,5 +1,5 @@
 
-/* LETRA DESCRIPCIONES */
+/* LETRA DESCRIPCIONES /valoracion y lo otro*/
 .colorletrades{
   color: rgb(50, 28, 151) !important;
   font-size: 15px;
@@ -66,8 +66,7 @@
 }
 
 
-
-
+/*Letra descripcion dde verproducto*/
 .letra{
 font-family: 'Amatic SC', cursive;
 
@@ -75,6 +74,7 @@ font-family: 'Amatic SC', cursive;
  color: rgb(210,105,30);
 }
 
+/*Letra de las descripciones(valoraciones*/
 .letrades{
   font-family: 'Amatic SC', cursive;
 
