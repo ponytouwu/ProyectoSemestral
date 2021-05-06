@@ -10,9 +10,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="icon" type="gif" href="imagenes/tenor.gif">
     <link type="text/css" rel="stylesheet" href="css/estilos.css">
-    <title>Seccion Gatuna</title>
+    <!-- api mapbox -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css" rel="stylesheet"> 
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
+    <title>Contactanos</title>
     <!--Logos redes sociales-->
     <!--
                 padding:  tamaño del ciculito del logo , que tan ancho lo quieres.
@@ -81,7 +83,7 @@
                 if (isNaN($("#telefono").val())) {
                     mensaje = mensaje + "<br>El teléfono solo puede contener números";
                 }
-                
+
                 if (mensaje != "Debes corregir los siguientes errores para poder continuar") {
                     $("#mensaje_error").html(mensaje); //mostrando el texto de la variable en el div
                     $("#mensaje_error").show(); //haciendo visible mi div
@@ -98,49 +100,49 @@
             })
 
             $("#nombre").keypress(function (key) {
-                    window.console.log(key.charCode)
-                    if ((key.charCode < 97 || key.charCode > 122)//letras mayusculas
-                        && (key.charCode < 65 || key.charCode > 90) //letras minusculas
-                        && (key.charCode != 45) //retroceso
-                        && (key.charCode != 241) //ñ
-                        && (key.charCode != 209) //Ñ
-                        && (key.charCode != 32) //espacio
-                        && (key.charCode != 225) //á
-                        && (key.charCode != 233) //é
-                        && (key.charCode != 237) //í
-                        && (key.charCode != 243) //ó
-                        && (key.charCode != 250) //ú
-                        && (key.charCode != 193) //Á
-                        && (key.charCode != 201) //É
-                        && (key.charCode != 205) //Í
-                        && (key.charCode != 211) //Ó
-                        && (key.charCode != 218) //Ú
+                window.console.log(key.charCode)
+                if ((key.charCode < 97 || key.charCode > 122)//letras mayusculas
+                    && (key.charCode < 65 || key.charCode > 90) //letras minusculas
+                    && (key.charCode != 45) //retroceso
+                    && (key.charCode != 241) //ñ
+                    && (key.charCode != 209) //Ñ
+                    && (key.charCode != 32) //espacio
+                    && (key.charCode != 225) //á
+                    && (key.charCode != 233) //é
+                    && (key.charCode != 237) //í
+                    && (key.charCode != 243) //ó
+                    && (key.charCode != 250) //ú
+                    && (key.charCode != 193) //Á
+                    && (key.charCode != 201) //É
+                    && (key.charCode != 205) //Í
+                    && (key.charCode != 211) //Ó
+                    && (key.charCode != 218) //Ú
 
-                    )
-                        return false;
-                });
-                $("#apellido").keypress(function (key) {
-                    window.console.log(key.charCode)
-                    if ((key.charCode < 97 || key.charCode > 122)//letras mayusculas
-                        && (key.charCode < 65 || key.charCode > 90) //letras minusculas
-                        && (key.charCode != 45) //retroceso
-                        && (key.charCode != 241) //ñ
-                        && (key.charCode != 209) //Ñ
-                        && (key.charCode != 32) //espacio
-                        && (key.charCode != 225) //á
-                        && (key.charCode != 233) //é
-                        && (key.charCode != 237) //í
-                        && (key.charCode != 243) //ó
-                        && (key.charCode != 250) //ú
-                        && (key.charCode != 193) //Á
-                        && (key.charCode != 201) //É
-                        && (key.charCode != 205) //Í
-                        && (key.charCode != 211) //Ó
-                        && (key.charCode != 218) //Ú
+                )
+                    return false;
+            });
+            $("#apellido").keypress(function (key) {
+                window.console.log(key.charCode)
+                if ((key.charCode < 97 || key.charCode > 122)//letras mayusculas
+                    && (key.charCode < 65 || key.charCode > 90) //letras minusculas
+                    && (key.charCode != 45) //retroceso
+                    && (key.charCode != 241) //ñ
+                    && (key.charCode != 209) //Ñ
+                    && (key.charCode != 32) //espacio
+                    && (key.charCode != 225) //á
+                    && (key.charCode != 233) //é
+                    && (key.charCode != 237) //í
+                    && (key.charCode != 243) //ó
+                    && (key.charCode != 250) //ú
+                    && (key.charCode != 193) //Á
+                    && (key.charCode != 201) //É
+                    && (key.charCode != 205) //Í
+                    && (key.charCode != 211) //Ó
+                    && (key.charCode != 218) //Ú
 
-                    )
-                        return false;
-                });
+                )
+                    return false;
+            });
         });
 
 
@@ -155,57 +157,69 @@
 
 
 </head>
-        <style>
-            .fa {
-                padding: 20px;
-                font-size: 30px;
-                width: 60px;
-                text-align: center;
-                text-decoration: none;
-                margin: 5px 2px;
-                border-radius: 50%;
-            }
-    
-            .fa-facebook {
-                background: #3B5998;
-                color: white;
-            }
-    
-            .fa-youtube {
-                background: #bb0000;
-                color: white;
-            }
-    
-            .fa-instagram {
-                background: #125688;
-                color: white;
-            }
-            /* fondo */
-            body {
-                background-image: url("imagenes/fondoprueba3.png");
-            background-repeat: repeat;
-            background-color: rgba(209, 209, 171, 0.473);
-            }
-        </style>
-        <!--FIN Logos redes sociales-->
-        <script>
-            function cambiarModo() { 
-            var cuerpoweb = document.body; 
-            cuerpoweb.classList.toggle("oscuro"); 
-        }
-        </script>
-    
-    <script type="text/javascript"> 
-        function cambiarModo() { 
-          var cuerpoweb = document.body; 
-          cuerpoweb.classList.toggle("oscuro"); 
-        } 
-      </script>
-    
-    
-    </head>
+<style>
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 60px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+    }
+
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+
+    .fa-youtube {
+        background: #bb0000;
+        color: white;
+    }
+
+    .fa-instagram {
+        background: #125688;
+        color: white;
+    }
+
+    /* fondo */
+    body {
+        background-image: url("imagenes/fondoprueba3.png");
+        background-repeat: repeat;
+        background-color: rgba(209, 209, 171, 0.473);
+    }
+</style>
+<!--FIN Logos redes sociales-->
+<script>
+    function cambiarModo() {
+        var cuerpoweb = document.body;
+        cuerpoweb.classList.toggle("oscuro");
+    }
+</script>
+
+<script type="text/javascript">
+    function cambiarModo() {
+        var cuerpoweb = document.body;
+        cuerpoweb.classList.toggle("oscuro");
+    }
+</script>
+
+
+</head>
 
 <body>
+
+    <!-- mapa body -->
+    <!-- cargar el plugin. -->
+    <script
+        src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css"
+        type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+    <!-- fin mapa body -->
     <!--MENU PRINCIPAL-->
     <nav class="navbar navbar-expand-md bg-danger navbar-dark color_navbar">
         <a class="navbar-brand colorletranav perrigatos"><img class="imagen_navbar"
@@ -233,8 +247,9 @@
                 <li class="nav-item">
                     <a class="nav-link colorletranav cambiocolor" href="carrito.html">Carrito</a>
                 </li>
-                
-                <img src="imagenes/moon_icon_159962.png" alt="icono luna"  class="icono_luna" onclick="cambiarModo()" style="margin-left: 10%;">
+
+                <img src="imagenes/moon_icon_159962.png" alt="icono luna" class="icono_luna" onclick="cambiarModo()"
+                    style="margin-left: 10%;">
 
 
 
@@ -244,11 +259,11 @@
         <div class="search-container">
             <a href="inicioSesion.html" style="color: rgb(0, 0, 0);">Iniciar Sesion </a>
             <a href="registro.html" style="color: rgb(0, 0, 0);">Registrarte</a>
-             <form action="/action_page.php">
-                 <input type="text" placeholder="Buscar" name="search">
-                 <button class="btn btn-danger" type="submit">Buscar</button>
-             </form>
-         </div>
+            <form action="/action_page.php">
+                <input type="text" placeholder="Buscar" name="search">
+                <button class="btn btn-danger" type="submit">Buscar</button>
+            </form>
+        </div>
     </nav>
     <!--MENU FIN PRINCIPAL-->
 
@@ -320,6 +335,11 @@
             </div>
         </div>
     </div>
+    
+    <!-- mapa -->
+    <div class="container" >
+    <div id='map' style='width: 700px; height: 250px;z-index: 1000;margin-top:80px;' class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 offset-1"></div>
+    </div>
     <!--PIE DE PAGINA-->
     <footer>
 
@@ -358,9 +378,40 @@
             </div>
         </div>
     </footer>
-
+    
     <!--FIN pie de pagina-->
 
 </body>
 
 </html>
+
+<script type="text/javascript">
+    mapboxgl.accessToken = 'pk.eyJ1IjoicG9ueXd5emUiLCJhIjoiY2tvYzMweG16MGYxeTMybGh5NHZ0bGJxcyJ9.8F45Pp3pgB2CDC896K_GYw';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-70.749735, -33.355620],
+        zoom: 15,
+        interactive: false
+    });
+    // create the popup
+    var popup = new mapboxgl.Popup({ offset: 25 }).setText(
+        'Sucursal Perrigatos Totoralillo 825'
+    );
+
+    // create DOM element for the marker
+    var el = document.createElement('div');
+    el.id = 'marker';
+    var marker1 = new mapboxgl.Marker()
+        .setLngLat([-70.749735, -33.355620])
+        .setPopup(popup)
+        .addTo(map);
+
+
+    // map.addControl(
+    //     new MapboxGeocoder({
+    //         accessToken: mapboxgl.accessToken,
+    //         mapboxgl: mapboxgl
+    //     })
+    // );
+</script>
