@@ -51,7 +51,8 @@
         /* fondo */
         body {
             background-image: url("imagenes/fondoprueba3.png");
-            background-repeat: no-repeat;
+            background-repeat: repeat;
+            background-color: rgba(209, 209, 171, 0.473);
         }
     </style>
     
@@ -67,11 +68,23 @@
         }
     </style>
     <!--Banner responsivo-->
+    <script>
+        function cambiarModo() { 
+        var cuerpoweb = document.body; 
+        cuerpoweb.classList.toggle("oscuro"); 
+    }
+    </script>
 
-
+<script type="text/javascript"> 
+    function cambiarModo() { 
+      var cuerpoweb = document.body; 
+      cuerpoweb.classList.toggle("oscuro"); 
+    } 
+  </script>
 </head>
 
 <body>
+
     <!--MENU PRINCIPAL-->
     <nav class="navbar navbar-expand-md bg-danger navbar-dark color_navbar">
         <a class="navbar-brand colorletranav perrigatos"><img class="imagen_navbar"
@@ -99,6 +112,8 @@
                 <li class="nav-item">
                     <a class="nav-link colorletranav cambiocolor" href="carrito.html">Carrito</a>
                 </li>
+                
+                <img src="imagenes/moon_icon_159962.png" alt="icono luna"  class="icono_luna" onclick="cambiarModo()" style="margin-left: 10%;">
 
 
 
@@ -106,6 +121,8 @@
             </ul>
         </div>
         <div class="search-container">
+           <a href="inicioSesion.html">Iniciar Sesion </a>
+           <a href="registro.html">Registrarte</a>
             <form action="/action_page.php">
                 <input type="text" placeholder="Buscar" name="search">
                 <button class="btn btn-danger" type="submit">Buscar</button>
@@ -277,7 +294,7 @@
             </div>
         </div>
     </footer>
-
+    
     <!--FIN pie de pagina-->
 
 

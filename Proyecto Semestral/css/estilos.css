@@ -1,4 +1,16 @@
 
+/*Modo oscuro*/
+.oscuro{ 
+  background-color: #1f1f1f; 
+  color: #f1eded; 
+}
+/*icono luna*/
+.icono_luna{
+  height: 5%;
+  width: 5%;
+}
+
+
 /* LETRA DESCRIPCIONES /valoracion y lo otro*/
 .colorletrades{
   color: rgb(50, 28, 151) !important;
@@ -9,20 +21,20 @@
 
 /* cambio de color de navbar letra */
 .colorletranav{
-  color: rgb(50, 28, 151) !important;
+  color: rgb(0, 0, 0) !important;
   font-size: 1.8rem;
 }
 
 @media (min-width: 200px) and (max-width: 1000px){
   .colorletranav{
-    color: rgb(50, 28, 151) !important;
+    color: rgb(0, 0, 0) !important;
     font-size: 1rem;
   }
 }
 
 @media (min-width: 1001px) and (max-width: 1100px){
   .colorletranav{
-    color: rgb(50, 28, 151) !important;
+    color: rgb(0, 0, 0) !important;
     font-size: 0.98rem;
   }
 }
@@ -658,3 +670,15 @@ input[type="radio"]:checked ~ label {
     color: rgb(224, 130, 118);
 }
 
+/*Formuolario registro*/
+.formulario_reg{
+  background-color: rgb(236, 189, 100);
+  padding: 1%;
+  box-shadow: 5px 5px 10px rgb(53, 49, 49);
+}
+
+/*Letra del formulario*/
+label{
+  color: #000000;
+  font-weight: 900;
+}

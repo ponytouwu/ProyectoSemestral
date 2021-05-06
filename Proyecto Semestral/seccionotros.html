@@ -50,15 +50,30 @@
         body {
             background-image: url("imagenes/fondoprueba3.png");
             background-repeat: repeat;
+            background-color: rgba(209, 209, 171, 0.473);
         }
     </style>
     <!--FIN Logos redes sociales-->
+    <script>
+        function cambiarModo() { 
+        var cuerpoweb = document.body; 
+        cuerpoweb.classList.toggle("oscuro"); 
+    }
+    </script>
+
+<script type="text/javascript"> 
+    function cambiarModo() { 
+      var cuerpoweb = document.body; 
+      cuerpoweb.classList.toggle("oscuro"); 
+    } 
+  </script>
 
 </head>
 <body>
     <!--MENU PRINCIPAL-->
     <nav class="navbar navbar-expand-md bg-danger navbar-dark color_navbar">
-        <a class="navbar-brand colorletranav perrigatos"><img class="imagen_navbar" src="imagenes/tenor.gif">PerriGatos</a>
+        <a class="navbar-brand colorletranav perrigatos"><img class="imagen_navbar"
+                src="imagenes/tenor.gif">PerriGatos</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -82,6 +97,8 @@
                 <li class="nav-item">
                     <a class="nav-link colorletranav cambiocolor" href="carrito.html">Carrito</a>
                 </li>
+                
+                <img src="imagenes/moon_icon_159962.png" alt="icono luna"  class="icono_luna" onclick="cambiarModo()" style="margin-left: 10%;">
 
 
 
@@ -89,6 +106,8 @@
             </ul>
         </div>
         <div class="search-container">
+           <a href="">Iniciar Sesion </a>
+           <a href="registro.html">Registrarte</a>
             <form action="/action_page.php">
                 <input type="text" placeholder="Buscar" name="search">
                 <button class="btn btn-danger" type="submit">Buscar</button>
