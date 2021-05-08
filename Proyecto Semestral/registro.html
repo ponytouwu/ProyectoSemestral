@@ -21,6 +21,7 @@
         background-color: rgba(209, 209, 171, 0.473);
     }
         </style>
+
         <script type="text/javascript">
             $(document).ready(function(){
                 var input=  document.getElementById('postal');
@@ -81,6 +82,7 @@
                     event.preventDefault(); //evito que el formulario se envie
                 }
 
+
             });
 
             $("#nombre").keypress(function (key) {
@@ -106,6 +108,15 @@
                 return false;
         });
             });
+
+            document.getElementById('hablar').addEventListener("click",()=>{
+         decir(document.getElementById("texto").value);
+        });
+
+        function decir(texto){
+         speechSynthesis.speak(new SpeechSynthesisUtterance(texto));
+            }
+
         </script>
     </head>
 
@@ -174,6 +185,8 @@
                     
                 </div>
                 <div style="text-align: center;"> <a href="home.html"><input type="button" class="btn btn-danger" value="Vovler a pagina de inicio"></a></div>
+
+                
         
         
         

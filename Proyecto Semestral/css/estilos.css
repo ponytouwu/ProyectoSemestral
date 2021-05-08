@@ -6,8 +6,8 @@
 }
 /*icono luna*/
 .icono_luna{
-  height: 5%;
-  width: 5%;
+  height: 13%;
+  width: 13%;
 }
 
 
@@ -719,7 +719,8 @@ label{
     height: 250px;
     z-index: 1000;
     margin-top:80px;
-    margin-left: 70px;
+    margin-left: 65px;
+    
   }
 
 }
@@ -727,7 +728,25 @@ label{
 @media (min-width: 901px) and (max-width: 9000px) {
   .mapa{
     width: 700px; height: 250px;z-index: 1000;margin-top:80px;
-    margin-left: 400px;
+    margin-left: 550px;
+  }
+
+}
+
+/*boton para escuchar*/
+@media (min-width: 100px) and (max-width: 900px) {
+  .boton_escuchar{
+    margin-left: 15%;
+    margin-top: 1%;
+  }
+
+}
+
+@media (min-width: 901px) and (max-width: 9000px) {
+  .boton_escuchar{
+    margin-left: 65%;
+    margin-top: 1%;
+    
   }
 
 }
