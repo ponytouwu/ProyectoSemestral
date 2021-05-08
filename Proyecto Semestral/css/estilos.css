@@ -682,3 +682,53 @@ label{
   color: #000000;
   font-weight: 900;
 }
+
+/*CONTROL contactanos*/
+
+@media (min-width: 100px) and (max-width: 900px) {
+  .contactanos{
+      margin-left: 0%;
+  }
+
+}
+@media (min-width: 901px) and (max-width: 9000px) {
+  .contactanos{
+      margin-left: 25%;
+  }
+
+}
+
+/*Control iconos de contactanos*/
+@media (min-width: 100px) and (max-width: 900px) {
+  .icon{
+      padding-left: 0%;
+  }
+
+}
+@media (min-width: 901px) and (max-width: 9000px) {
+  .icon{
+      padding-left: 16%;
+  }
+
+}
+
+/*Mapa*/
+@media (min-width: 100px) and (max-width: 900px) {
+  .mapa{
+    width: 300px; 
+    height: 250px;
+    z-index: 1000;
+    margin-top:80px;
+    margin-left: 70px;
+  }
+
+}
+
+@media (min-width: 901px) and (max-width: 9000px) {
+  .mapa{
+    width: 700px; height: 250px;z-index: 1000;margin-top:80px;
+    margin-left: 400px;
+  }
+
+}
+
