@@ -6,7 +6,7 @@
 }
 /*icono luna*/
 .icono_luna{
-  height: 13%;
+  
   width: 13%;
 }
 
@@ -715,8 +715,8 @@ label{
 /*Mapa*/
 @media (min-width: 100px) and (max-width: 900px) {
   .mapa{
-    width: 300px; 
-    height: 250px;
+    width: 200px; 
+    height: 150px;
     z-index: 1000;
     margin-top:80px;
     margin-left: 65px;
