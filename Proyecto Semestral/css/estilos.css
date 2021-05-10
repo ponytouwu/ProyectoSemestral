@@ -750,4 +750,7 @@ label{
   }
 
 }
-
+/*Corregir cambio de color xd*/
+label:hover{
+  color: black !important;
+}
